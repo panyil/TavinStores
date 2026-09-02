@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tavin Stores | Luxury Bridal & Fashion Jewelry (Est. 2014)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            black: '#111111',
+                            gold: '#D4AF37',
+                            lightgold: '#F3E5AB',
+                            gray: '#F9F9F9',
+                            darkgray: '#2A2A2A'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-luxury-gray text-luxury-black font-sans antialiased selection:bg-luxury-gold selection:text-white">
+
+    <div
+        class="bg-luxury-black text-luxury-lightgold text-xs tracking-widest py-2 px-4 text-center flex justify-center items-center gap-4">
+        <span>WORLDWIDE INSURED SHIPPING AVAILABLE | COMPLIMENTING EVERY BRIDE SINCE 2014 ✨</span>
+        <a href="https://wa.me/2348132989985" target="_blank"
+            class="hover:text-white transition hidden md:inline-flex items-center gap-1">
+            <i class="fa-brands fa-whatsapp text-green-400"></i> Direct Concierge
+        </a>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <button id="menu-btn" class="md:hidden text-luxury-black focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+
+            <a href="#" class="flex items-center">
+                <div
+                    class="h-12 w-12 sm:h-14 sm:w-14 rounded-full overflow-hidden border border-luxury-gold/50 shadow-sm flex items-center justify-center bg-luxury-black">
+                    <img src="Screenshot_20260902_144250.jpg" alt="Tavin Stores Logo"
+                        class="h-full w-full object-cover">
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wider">
+                <a href="#home" class="text-luxury-gold border-b border-luxury-gold pb-1">HOME</a>
+                <a href="#collection" class="hover:text-luxury-gold transition">BRIDAL COLLECTION</a>
+                <a href="#fashion" class="hover:text-luxury-gold transition">FASHION JEWELRY</a>
+                <a href="#shipping" class="hover:text-luxury-gold transition">WORLDWIDE SHIPPING</a>
+                <a href="#about" class="hover:text-luxury-gold transition">ABOUT US</a>
+                <a href="#contact" class="hover:text-luxury-gold transition">CONTACT</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <button aria-label="Search" class="hidden sm:block text-luxury-black hover:text-luxury-gold transition">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                <button aria-label="Wishlist"
+                    class="relative hidden sm:block text-luxury-black hover:text-luxury-gold transition">
+                    <i class="fa-regular fa-heart text-lg"></i>
+                    <span
+                        class="absolute -top-1 -right-2 bg-luxury-gold text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                </button>
+                <a href="https://wa.me/2348132989985?text=Hello%20Tavin%20Stores,%20I%20would%20like%20to%20make%20an%20inquiry."
+                    target="_blank"
+                    class="bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm px-4 py-2.5 rounded-full font-medium tracking-wide flex items-center gap-2 transition shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span class="hidden sm:inline">WhatsApp Order</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 py-6 px-6 shadow-xl">
+            <nav class="flex flex-col space-y-4 text-sm font-medium tracking-wider">
+                <a href="#home" class="mobile-link text-luxury-gold">HOME</a>
+                <a href="#collection" class="mobile-link hover:text-luxury-gold">BRIDAL COLLECTION</a>
+                <a href="#fashion" class="mobile-link hover:text-luxury-gold">FASHION JEWELRY</a>
+                <a href="#shipping" class="mobile-link hover:text-luxury-gold">WORLDWIDE SHIPPING</a>
+                <a href="#about" class="mobile-link hover:text-luxury-gold">ABOUT US</a>
+                <a href="#contact" class="mobile-link hover:text-luxury-gold">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-luxury-black text-white min-h-[85vh] flex items-center">
+        <div class="absolute inset-0 opacity-40 bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1920');">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-luxury-black via-luxury-black/70 to-transparent"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
+            <div class="max-w-2xl">
+                <span class="text-luxury-gold tracking-[0.25em] uppercase text-xs font-semibold block mb-3">Est. 2014 •
+                    Mastercraft Jewelry</span>
+                <h1 class="font-serif text-4xl sm:text-6xl font-bold tracking-tight mb-6 leading-tight">
+                    Timeless Elegance for Your Special Moment.
+                </h1>
+                <p class="text-gray-300 text-base sm:text-lg mb-8 font-light leading-relaxed">
+                    Handcrafted bridal sets and exquisite fashion jewelry designed to capture eternal grace, delivered
+                    securely worldwide from our studio.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#collection"
+                        class="bg-luxury-gold hover:bg-luxury-lightgold text-luxury-black font-semibold text-sm tracking-widest uppercase px-8 py-4 transition text-center shadow-lg">
+                        Explore Collection
+                    </a>
+                    <a href="https://wa.me/2348132989985?text=Hello%20Tavin%20Stores,%20I%20want%20to%20consult%20about%20bridal%20pieces."
+                        target="_blank"
+                        class="border border-white hover:bg-white hover:text-luxury-black text-white font-semibold text-sm tracking-widest uppercase px-8 py-4 transition text-center flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-400"></i> Order via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white border-b border-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="flex items-center justify-center space-x-4 p-4">
+                <i class="fa-solid fa-earth-americas text-3xl text-luxury-gold"></i>
+                <div class="text-left">
+                    <h3 class="font-serif font-bold text-sm tracking-wider">Worldwide Shipping</h3>
+                    <p class="text-xs text-gray-500">Fully insured global delivery</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center space-x-4 p-4">
+                <i class="fa-solid fa-gem text-3xl text-luxury-gold"></i>
+                <div class="text-left">
+                    <h3 class="font-serif font-bold text-sm tracking-wider">Certified Craftsmanship</h3>
+                    <p class="text-xs text-gray-500">Exquisite stones & premium metals</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center space-x-4 p-4">
+                <i class="fa-solid fa-shield-halved text-3xl text-luxury-gold"></i>
+                <div class="text-left">
+                    <h3 class="font-serif font-bold text-sm tracking-wider">Trusted Since 2014</h3>
+                    <p class="text-xs text-gray-500">Over a decade of bridal excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-xl mx-auto mb-12">
+            <span class="text-luxury-gold tracking-[0.2em] uppercase text-xs font-semibold block mb-2">Curated
+                Elegance</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight">The Signature Collections</h2>
+            <div class="w-16 h-0.5 bg-luxury-gold mx-auto mt-4"></div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-3 mb-12 text-sm">
+            <button onclick="filterProducts('all')"
+                class="filter-btn active-filter px-6 py-2.5 border border-luxury-black bg-luxury-black text-white transition tracking-wider">ALL
+                PIECES</button>
+            <button onclick="filterProducts('bridal')"
+                class="filter-btn px-6 py-2.5 border border-gray-300 hover:border-luxury-black text-luxury-black transition tracking-wider">BRIDAL
+                SETS</button>
+            <button onclick="filterProducts('necklace')"
+                class="filter-btn px-6 py-2.5 border border-gray-300 hover:border-luxury-black text-luxury-black transition tracking-wider">NECKLACES</button>
+            <button onclick="filterProducts('rings')"
+                class="filter-btn px-6 py-2.5 border border-gray-300 hover:border-luxury-black text-luxury-black transition tracking-wider">RINGS</button>
+        </div>
+
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="product-card group bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+                data-category="bridal">
+                <div class="relative overflow-hidden aspect-square bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800"
+                        alt="Royal Crown Bridal Set"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span
+                        class="absolute top-3 left-3 bg-luxury-black text-white text-[10px] uppercase tracking-widest px-2.5 py-1">Bridal
+                        Set</span>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="font-serif text-lg font-bold mb-1">Royal Crown Bridal Set</h3>
+                    <p class="text-xs text-gray-500 mb-3">Impeccable diamond zirconia arrangement</p>
+                    <div class="text-luxury-gold font-semibold tracking-wide mb-4">Inquire for Pricing</div>
+                    <a href="https://wa.me/2348132989985?text=Hello%20Tavin%20Stores,%20I%20want%20to%20order/inquire%20about%20the%20Royal%20Crown%20Bridal%20Set."
+                        target="_blank"
+                        class="w-full bg-luxury-black hover:bg-luxury-gold hover:text-luxury-black text-white text-xs uppercase tracking-widest py-3 font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-sm"></i> Order via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card group bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+                data-category="necklace">
+                <div class="relative overflow-hidden aspect-square bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=800"
+                        alt="Aurelia Gold Choker"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span
+                        class="absolute top-3 left-3 bg-luxury-black text-white text-[10px] uppercase tracking-widest px-2.5 py-1">Necklace</span>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="font-serif text-lg font-bold mb-1">Aurelia Diamond Choker</h3>
+                    <p class="text-xs text-gray-500 mb-3">Layered gold finish with pristine sparkle</p>
+                    <div class="text-luxury-gold font-semibold tracking-wide mb-4">Inquire for Pricing</div>
+                    <a href="https://wa.me/2348132989985?text=Hello%20Tavin%20Stores,%20I%20want%20to%20order/inquire%20about%20the%20Aurelia%20Diamond%20Choker."
+                        target="_blank"
+                        class="w-full bg-luxury-black hover:bg-luxury-gold hover:text-luxury-black text-white text-xs uppercase tracking-widest py-3 font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-sm"></i> Order via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card group bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+                data-category="rings">
+                <div class="relative overflow-hidden aspect-square bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=800"
+                        alt="Solitaire Engagement Ring"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span
+                        class="absolute top-3 left-3 bg-luxury-black text-white text-[10px] uppercase tracking-widest px-2.5 py-1">Ring</span>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="font-serif text-lg font-bold mb-1">Celeste Solitaire Ring</h3>
+                    <p class="text-xs text-gray-500 mb-3">Classic cut brilliant engagement band</p>
+                    <div class="text-luxury-gold font-semibold tracking-wide mb-4">Inquire for Pricing</div>
+                    <a href="https://wa.me/2348132989985?text=Hello%20Tavin%20Stores,%20I%20want%20to%20order/inquire%20about%20the%20Celeste%20Solitaire%20Ring."
+                        target="_blank"
+                        class="w-full bg-luxury-black hover:bg-luxury-gold hover:text-luxury-black text-white text-xs uppercase tracking-widest py-3 font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-sm"></i> Order via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card group bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+                data-category="bridal">
+                <div class="relative overflow-hidden aspect-square bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1611591470711-a1221b6d814c?auto=format&fit=crop&q=80&w=800"
+                        alt="Duchess Grand Bridal Set"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span
+                        class="absolute top-3 left-3 bg-luxury-black text-white text-[10px] uppercase tracking-widest px-2.5 py-1">Bridal
+                        Set</span>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="font-serif text-lg font-bold mb-1">Duchess Grand Bridal Set</h3>
+                    <p class="text-xs text-gray-500 mb-3">Complete necklace, earrings, and bracelet suite</p>
+                    <div class="text-luxury-gold font-semibold tracking-wide mb-4">Inquire for Pricing</div>
+                    <a href="https://wa.me/2348132989985?text=Hello%20Tavin%20Stores,%20I%20want%20to%20order/inquire%20about%20the%20Duchess%20Grand%20Bridal%20Set."
+                        target="_blank"
+                        class="w-full bg-luxury-black hover:bg-luxury-gold hover:text-luxury-black text-white text-xs uppercase tracking-widest py-3 font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-sm"></i> Order via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card group bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+                data-category="necklace">
+                <div class="relative overflow-hidden aspect-square bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800"
+                        alt="Serenade Pendant"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span
+                        class="absolute top-3 left-3 bg-luxury-black text-white text-[10px] uppercase tracking-widest px-2.5 py-1">Necklace</span>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="font-serif text-lg font-bold mb-1">Serenade Diamond Pendant</h3>
+                    <p class="text-xs text-gray-500 mb-3">Delicate daily luxury fashion piece</p>
+                    <div class="text-luxury-gold font-semibold tracking-wide mb-4">Inquire for Pricing</div>
+                    <a href="https://wa.me/2348132989985?text=Hello%20Tavin%20Stores,%20I%20want%20to%20order/inquire%20about%20the%20Serenade%20Diamond%20Pendant."
+                        target="_blank"
+                        class="w-full bg-luxury-black hover:bg-luxury-gold hover:text-luxury-black text-white text-xs uppercase tracking-widest py-3 font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-sm"></i> Order via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card group bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition"
+                data-category="rings">
+                <div class="relative overflow-hidden aspect-square bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=800"
+                        alt="Eternal Band Ring"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span
+                        class="absolute top-3 left-3 bg-luxury-black text-white text-[10px] uppercase tracking-widest px-2.5 py-1">Ring</span>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="font-serif text-lg font-bold mb-1">Eternal Pavé Band</h3>
+                    <p class="text-xs text-gray-500 mb-3">Continuous sparkling gemstone wedding band</p>
+                    <div class="text-luxury-gold font-semibold tracking-wide mb-4">Inquire for Pricing</div>
+                    <a href="https://wa.me/2348132989985?text=Hello%20Tavin%20Stores,%20I%20want%20to%20order/inquire%20about%20the%20Eternal%20Pavé%20Band."
+                        target="_blank"
+                        class="w-full bg-luxury-black hover:bg-luxury-gold hover:text-luxury-black text-white text-xs uppercase tracking-widest py-3 font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-sm"></i> Order via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shipping" class="bg-luxury-black text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1920');">
+        </div>
+        <div
+            class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-luxury-gold tracking-[0.2em] uppercase text-xs font-semibold block mb-2">Global
+                    Logistics</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight mb-6">Worldwide Insured Shipping,
+                    Crafted for Your Peace of Mind</h2>
+                <p class="text-gray-300 mb-6 font-light leading-relaxed">
+                    Since 2014, Tavin Stores has safely delivered high-end bridal sets and delicate fashion jewelry
+                    across continents. Every package is custom-sealed, fully insured, and shipped through trusted
+                    priority courier networks.
+                </p>
+                <ul class="space-y-4 mb-8 text-sm text-gray-300">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check text-luxury-gold"></i> Secure multi-layer velvet vault packaging
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check text-luxury-gold"></i> Real-time tracking and signature confirmation
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-check text-luxury-gold"></i> Dedicated WhatsApp concierge support
+                        throughout transit
+                    </li>
+                </ul>
+                <a href="https://wa.me/2348132989985?text=Hello%20Tavin%20Stores,%20I%20want%20to%20inquire%20about%20international%20shipping%20to%20my%20country."
+                    target="_blank"
+                    class="inline-flex items-center gap-3 bg-luxury-gold hover:bg-luxury-lightgold text-luxury-black font-semibold text-xs tracking-widest uppercase px-8 py-4 transition">
+                    <i class="fa-brands fa-whatsapp text-base"></i> Check Shipping to Your Country
+                </a>
+            </div>
+            <div class="bg-white/5 border border-white/10 p-8 sm:p-10 backdrop-blur-md rounded-lg">
+                <h3 class="font-serif text-xl font-bold mb-6 text-luxury-gold">Quick Shipping & Inquiry Form</h3>
+                <form id="shipping-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Your Name</label>
+                        <input type="text" id="form-name" required
+                            class="w-full bg-black/40 border border-gray-700 rounded px-4 py-3 text-white text-sm focus:border-luxury-gold focus:outline-none"
+                            placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Destination Country /
+                            City</label>
+                        <input type="text" id="form-location" required
+                            class="w-full bg-black/40 border border-gray-700 rounded px-4 py-3 text-white text-sm focus:border-luxury-gold focus:outline-none"
+                            placeholder="e.g., London, UK / New York, USA">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Jewelry Piece of
+                            Interest</label>
+                        <input type="text" id="form-item" required
+                            class="w-full bg-black/40 border border-gray-700 rounded px-4 py-3 text-white text-sm focus:border-luxury-gold focus:outline-none"
+                            placeholder="e.g., Royal Crown Bridal Set">
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold text-xs tracking-widest uppercase py-4 transition flex items-center justify-center gap-2 mt-4">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Send Inquiry via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1">
+                <span class="text-luxury-gold tracking-[0.2em] uppercase text-xs font-semibold block mb-2">Our
+                    Heritage</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight mb-6">Adorning Brides and
+                    Connoisseurs Since 2014</h2>
+                <p class="text-gray-600 mb-4 font-light leading-relaxed">
+                    Founded in 2014, Tavin Stores began with a single vision: to provide breathtaking, high-grade bridal
+                    and fashion jewelry that matches the gravity of life’s most cherished celebrations.
+                </p>
+                <p class="text-gray-600 mb-6 font-light leading-relaxed">
+                    Over the years, we have grown into a trusted global boutique, serving brides across continents with
+                    personalized concierge attention, transparent guidance, and absolute dedication to sparkle and
+                    durability.
+                </p>
+                <div class="grid grid-cols-3 gap-6 border-t border-gray-200 pt-6">
+                    <div>
+                        <div class="font-serif text-3xl font-bold text-luxury-gold">12+</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider mt-1">Years Active</div>
+                    </div>
+                    <div>
+                        <div class="font-serif text-3xl font-bold text-luxury-gold">5K+</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider mt-1">Happy Brides</div>
+                    </div>
+                    <div>
+                        <div class="font-serif text-3xl font-bold text-luxury-gold">40+</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider mt-1">Countries Served</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=600"
+                    alt="Jewelry Craftsmanship" class="w-full h-80 object-cover shadow-md">
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=600"
+                    alt="Luxury Bridal Set" class="w-full h-80 object-cover shadow-md mt-8">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-luxury-gray border-t border-gray-200 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-2xl">
+            <span class="text-luxury-gold tracking-[0.2em] uppercase text-xs font-semibold block mb-2">Get in
+                Touch</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight mb-4">Direct Concierge Service</h2>
+            <p class="text-gray-600 text-sm mb-8 font-light">
+                Have questions regarding custom sizing, bespoke bridal packages, or express international dispatch?
+                Connect with our dedicated luxury advisors instantly on WhatsApp.
+            </p>
+            <a href="https://wa.me/2348132989985?text=Hello%20Tavin%20Stores,%20I%20would%20like%20to%20speak%20with%20a%20concierge%20advisor."
+                target="_blank"
+                class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-semibold text-sm tracking-widest uppercase px-10 py-5 rounded-full transition shadow-lg mb-8">
+                <i class="fa-brands fa-whatsapp text-xl"></i> Chat on WhatsApp (+234 8132989985)
+            </a>
+            <div class="text-xs text-gray-500 tracking-wider">
+                <i class="fa-solid fa-location-dot text-luxury-gold mr-1"></i> Flagship Location: Essenza Greenville
+                Plaza, Lekki Admiralty, Lagos
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-luxury-black text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <div
+                    class="h-16 w-16 rounded-full overflow-hidden border border-luxury-gold/50 shadow-sm flex items-center justify-center bg-luxury-black mb-4">
+                    <img src="Screenshot_20260902_144250.jpg" alt="Tavin Stores Logo"
+                        class="h-full w-full object-cover">
+                </div>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                    Exquisite bridal suites and luxury fashion jewelry delivered securely worldwide with uncompromising
+                    elegance.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-serif font-bold text-sm tracking-wider mb-4 text-luxury-gold">Quick Links</h4>
+                <ul class="space-y-2 text-xs text-gray-400">
+                    <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#collection" class="hover:text-white transition">Bridal Collection</a></li>
+                    <li><a href="#shipping" class="hover:text-white transition">Worldwide Shipping</a></li>
+                    <li><a href="#about" class="hover:text-white transition">About Our Heritage</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif font-bold text-sm tracking-wider mb-4 text-luxury-gold">Direct Contact & Store
+                </h4>
+                <ul class="space-y-2 text-xs text-gray-400">
+                    <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-green-400"></i> +234
+                        8132989985</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-luxury-gold"></i>
+                        concierge@tavinstores.com</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-location-dot text-luxury-gold mt-0.5"></i>
+                        Essenza Greenville Plaza, Lekki Admiralty, Lagos</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif font-bold text-sm tracking-wider mb-4 text-luxury-gold">Exclusive Drops</h4>
+                <p class="text-xs text-gray-400 mb-3">Join our private circle for early bridal catalog releases.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Your email address"
+                        class="bg-gray-900 border border-gray-700 text-xs px-3 py-2 text-white w-full focus:outline-none focus:border-luxury-gold">
+                    <button aria-label="Subscribe"
+                        class="bg-luxury-gold text-luxury-black px-4 py-2 text-xs font-semibold hover:bg-luxury-lightgold transition">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
+            <p>&copy; 2014–2026 Tavin Stores. All Rights Reserved.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+                <a href="#" class="hover:text-white transition">Shipping Guarantee</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Product Filtering Logic
+        function filterProducts(category) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-luxury-black', 'text-white', 'border-luxury-black');
+                btn.classList.add('border-gray-300', 'text-luxury-black');
+            });
+
+            event.target.classList.remove('border-gray-300', 'text-luxury-black');
+            event.target.classList.add('bg-luxury-black', 'text-white', 'border-luxury-black');
+
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Handle Shipping / Inquiry Form Submission to WhatsApp
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const location = document.getElementById('form-location').value;
+            const item = document.getElementById('form-item').value;
+
+            const message = `Hello Tavin Stores, my name is ${name}. I am inquiring about shipping '${item}' to ${location}. Please provide details.`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/2348132989985?text=${encodedMessage}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+
+</html>
